@@ -16,6 +16,7 @@ body {
 nav {
   display: flex;
   flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: darkgray;
 }
 
@@ -112,6 +113,14 @@ h2 {
   background-color: lightgray;
 }
 
+.my-work ul {
+  list-style: none;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
 
 .projects-container {
   display: flex;
