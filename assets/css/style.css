@@ -16,6 +16,7 @@ body {
 nav {
   display: flex;
   flex-wrap: wrap;
+  flex-wrap: wrap;
   background-color: darkgray;
 }
 
@@ -52,9 +53,8 @@ section {
   padding: 20px;
 }
 
-#about img,
-#crypto img,
-#crypto video {
+img,
+video {
   justify-content: space-between;
   margin-top: 20px;
   margin-left: 0px;
@@ -65,10 +65,7 @@ section {
   border-radius: 10%;
 }
 
-#about h2,
-#crypto h2,
-.my-work-heading,
-#contact h2 {
+h2 {
   text-align: center;
   padding: 20px;
   background-color: darkgray;
@@ -90,9 +87,8 @@ section {
   justify-content: space-between;
 }
 
-
 .description,
-.projects-container,
+.my-work-heading,
 .contact-divider {
   margin-left: 60px;
   flex: 1;
@@ -100,8 +96,7 @@ section {
   padding-left: 30px;
 }
 
-#about .description,
-#crypto .description {
+#about .description {
   width: 60%;
   flex: 1;
 }
@@ -118,6 +113,26 @@ section {
   background-color: lightgray;
 }
 
+.contact-heading,
+#my-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 2rem;
+}
+
+.contact-heading h2 {
+  margin: 0;
+}
+
+.contact-divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
 
 .projects-container {
   display: flex;
@@ -164,12 +179,8 @@ section {
   background-color: #008080;
 }
 
-
-#contact {
-  margin-top: 2rem;
-}
-
-#contact {
+#contact,
+#my-work {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -177,17 +188,12 @@ section {
   margin-top: 2rem;
 }
 
-.contact-heading,
-#my-work {
+.contact-heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   margin-right: 2rem;
-}
-
-.contact-heading h2 {
-  margin: 0;
 }
 
 .contact-divider {
