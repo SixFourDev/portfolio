@@ -15,8 +15,7 @@ body {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: darkgray;
 }
 
@@ -41,21 +40,17 @@ a:hover {
   color: white;
 }
 
-main {
-  flex-direction: column;
-  align-items: center;
-}
-
 section {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
 }
 
 img,
 video {
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
   margin-top: 20px;
   margin-left: 0px;
   padding: 2px;
@@ -64,14 +59,6 @@ video {
   box-shadow: 0 0 10px #ccc;
   border-radius: 10%;
   margin-right: 10px;
-}
-
-.para {
-  justify-content: space-between;
-  margin-top: 20px;
-  margin-left: -200px;
-  padding: 2px;
-  width: 200px;
 }
 
 h2 {
@@ -85,7 +72,7 @@ h2 {
 
 .crypto-images {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   margin-bottom: 20px;
   margin: 40px; 
@@ -93,6 +80,7 @@ h2 {
   flex: 1;
   padding-left: 30px;
 }
+
 .about-container {
   display: flex;
   align-items: center;
@@ -100,22 +88,12 @@ h2 {
 }
 
 .description,
+.projects-container,
 .contact-divider {
   margin-left: 60px;
   flex: 1;
   border-left: 1px solid black;
   padding-left: 30px;
-}
-
-.my-work-heading {
-  margin-left: 60px;
-  flex: 1;
-  padding-left: 30px;
-}
-
-#about .description {
-  width: 60%;
-  flex: 1;
 }
 
 #about p,
@@ -126,12 +104,19 @@ h2 {
 }
 
 #my-work {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  margin-right: 25px;
   padding: 50px 0;
   background-color: lightgray;
 }
 
-.contact-heading,
 .my-work-heading {
+  margin-right: 45px;
+}
+
+.contact-heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,7 +139,7 @@ h2 {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 50px;
 }
 
@@ -183,7 +168,7 @@ h2 {
 }
 
 .project-info a {
-  display: inline-block;
+  display: block;
   background-color: darkgray;
   color: #fff;
   padding: 10px 20px;
@@ -196,8 +181,7 @@ h2 {
   background-color: #008080;
 }
 
-#contact,
-#my-work {
+#contact {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
