@@ -102,18 +102,17 @@ video {
   padding-left: 30px;
 }
 /* Start of My Work Section */
-#my-work {
+.my-work-heading {
   display: flex;
   align-items: center;
   margin-top: 4rem;
-  margin-left: 260px;
+  margin-left: 30px;
   padding: 50px 0;
   background-color: lightgray;
 }
 
 .my-work-heading {
   margin-right: 65px;
-  align-items: center;
 }
 
 .projects-container {
@@ -125,7 +124,7 @@ video {
 }
 
 .project-box {
-  width: 24%;
+  width: 20%;
   margin-bottom: 40px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
 }
@@ -162,7 +161,8 @@ video {
   background-color: #008080;
 }
 /* Start of Contact Me Section */
-.contact-heading h2 {
+.contact-heading h2,
+.my-work h2 {
   margin: 0;
 }
 
@@ -175,10 +175,6 @@ video {
 #contact,
 #my-work {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 2rem;
 }
 
 .contact-heading {
@@ -236,7 +232,7 @@ video {
   }
 
   .project-box {
-    width: 48%;
+    width: 24%;
   }
 }
 
